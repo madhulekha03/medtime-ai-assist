@@ -356,8 +356,8 @@ export function addDays(base: Date, days: number) {
 }
 
 export function parseISODate(iso: string) {
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Date(y, (m ?? 1) - 1, d ?? 1);
+  const [y = 1970, m = 1, d = 1] = iso.split("-").map(Number);
+  return new Date(y, m - 1, d);
 }
 
 export function prettyDate(iso: string) {
@@ -369,14 +369,14 @@ export function prettyDate(iso: string) {
 }
 
 export function prettyTime(time: string) {
-  const [h, m] = time.split(":").map(Number);
+  const [h = 0, m = 0] = time.split(":").map(Number);
   const suffix = h >= 12 ? "PM" : "AM";
   const hour = h % 12 === 0 ? 12 : h % 12;
   return `${hour}:${String(m).padStart(2, "0")} ${suffix}`;
 }
 
 export function minutesOf(time: string) {
-  const [h, m] = time.split(":").map(Number);
+  const [h = 0, m = 0] = time.split(":").map(Number);
   return h * 60 + m;
 }
 
