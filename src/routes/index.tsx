@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Patient, doctor and hospital admin workspaces powered by AI scheduling intelligence.",
+          "Book, reschedule and manage multispeciality hospital appointments with AI slot recommendations, demand prediction and waiting-list automation.",
       },
     ],
   }),

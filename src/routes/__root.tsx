@@ -79,22 +79,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MediCare — AI Hospital Appointment System" },
+      { title: "MediCare — AI-Powered Hospital Appointments" },
       {
         name: "description",
         content:
-          "MediCare is an AI-powered appointment management system for a multispeciality hospital, with patient, doctor and admin workspaces.",
+          "Book, reschedule and manage multispeciality hospital appointments with AI slot recommendations, demand prediction and waiting-list automation.",
       },
       { name: "author", content: "MediCare" },
-      { property: "og:title", content: "MediCare — AI Hospital Appointment System" },
+      { property: "og:title", content: "MediCare — AI-Powered Hospital Appointments" },
       {
         property: "og:description",
         content:
-          "Smart slot recommendations, demand prediction and waiting-list automation for hospital OPD scheduling.",
+          "Book, reschedule and manage multispeciality hospital appointments with AI slot recommendations, demand prediction and waiting-list automation.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "MediCare — AI-Powered Hospital Appointments" },
+      { name: "twitter:description", content: "Book, reschedule and manage multispeciality hospital appointments with AI slot recommendations, demand prediction and waiting-list automation." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1571bb004fcf18e0399a6e40412447b3/id-preview-ef06f954--69aea679-3f58-4e0b-995b-13dcb3771660.lovable.app-1786796737110.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1571bb004fcf18e0399a6e40412447b3/id-preview-ef06f954--69aea679-3f58-4e0b-995b-13dcb3771660.lovable.app-1786796737110.png" },
     ],
     links: [
       {
